@@ -1,0 +1,48 @@
+body {
+  margin: 30px 50px;
+}
+
+.box_atas {
+  width: 100%;
+  height: 130px;
+  background-color: palegreen;
+  border: 2px solid black;
+}
+/*=CONTEINER-1*/
+.conteiner_box1 {
+  display: flex;
+  margin: 35px 0;
+}
+.box_kiri1 {
+  width: 20%;
+  height: 150px;
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+.box_kanan1 {
+  width: 80%;
+  height: 150px;
+  background-color: orangered;
+  border: 2px solid black;
+  margin-left: 70px;
+}
+/*=CONTEINER-2*/
+.conteiner_box2 {
+  display: flex;
+  margin: 35px 0;
+}
+.box_kiri2 {
+  width: 20%;
+  height: 150px;
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+.box_kanan2 {
+  width: 80%;
+  height: 150px;
+  background-color: aqua;
+  border: 2px solid black;
+  margin-left: 70px;
+}
