@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikum Javascript</title>
+  <script >
+    
+// nomor 1
+
+function hitung() {
+  const PHI = 3.14;
+  let jarijari = document.getElementById ("jari-jari").value ;
+  console.log ("jari-jari :" + jarijari);
+  let luas = PHI * jarijari;
+  let keliling = 2.0 * jarijari * jarijari;
+  console.log ("luas : " + luas );
+  console.log ("keliling : " + keliling );
+  let jumlah = document.getElementById("hasil");
+  jumlah.innerHTML = "<br> Luas : " + luas +"<br> Keliling : " + keliling ;    
+}
+
+// nomor 2
+function kursrp(value){
+  let datausd = parseInt(value);
+  const satu$ = 14650;
+
+  document.getElementById("hasil_konversi").innerHTML = datausd * satu$ ;
+}
+
+
+
+// nomor 3
+
+function hitungparkir() {
+  let jam_masuk = document.getElementById ("masuk").value ;
+  let jam_keluar = document.getElementById ("keluar").value ;
+  let selisih = jam_keluar - jam_masuk ; 
+  let biaya = 0 ;
+  const TARIF_AWAL = 3000 ; 
+  const TARIF_PERJAM = 1000 ; 
+  if(selisih <= 2) {
+    biaya = TARIF_AWAL;
+  }
+  else {
+    let tambahan_jam = selisih - 2;
+    biaya = TARIF_AWAL + (TARIF_PERJAM * tambahan_jam);
+  }
+  let area_biaya = document.getElementById ("biaya");
+  area_biaya.innerHTML = "Biaya Parkir = " + biaya;
+}
+
+// nomor 4
+function penjumlahan() {
+  let bil1 = document.getElementById("bil_1").value ;
+  let bil2 = document.getElementById("bil_2").value ;
+  let jumlah = parseInt(bil1) + parseInt(bil2);
+
+  document.getElementById("hasil_").value = jumlah ;
+
+  echo "selamatdatang";
+}
+
+  </script>
+</head>
+<body>
+  <h1 style="text-align: center; font-weight: bold;">Tugas Praktikum Javascript</h1>
+  <div style="display: flex; justify-content: space-around;">
+    <div>
+      
+  
+  <!-- ==========soal 1============= -->
+
+  <h4>1. Menghitung Luas dan Keliling Lingkaran</h4>
+  Masukan Jari-Jari Lingkaran :<br>
+  <input type="number" value="" size="15" id="jari-jari">
+  <br>
+  <br>
+  <button onclick="hitung()"> Hasil </button>
+  <br>
+  <span id="hasil">  </span>
+
+    <!-- ========== soal 2 ============= -->
+  <h4>2. Menghitung Nilai Kurs Rupiah</h4>
+  Masukan USD :<input type="text" onchange="kursrp(value)">
+  <br>
+  <br>
+  Hasil Rp. : <span id="hasil_konversi"></span>
+
+    </div>
+    <div>
+        <!-- ========== soal 3 ============= -->
+
+  <h4>3. Menghitung Biaya Parkir</h4>
+  Masuk Parkir : <input type="number" value="" size="15" id="masuk">
+  <br>
+  Keluar Parkir : <input type="number" value="" size="15" id="keluar">
+  <br>
+  <br>
+  <button onclick="hitungparkir()" > Biaya Parkir :  </button>
+  <br>
+  <br>
+  <span id="biaya"></span>
+
+  <!-- ========== soal 4 ============== -->
+  <h4>4. Menghitung Jumlah Dua Bilangan </h4>
+
+  <input type="number" value="" size="15" id="bil_1">
+  <br>
+  +
+  <br>
+  <input type="number" value="" size="15" id="bil_2" onchange="penjumlahan()">
+  <br>
+  =
+  <br>
+  <input size="15" id="hasil_">
+    </div>
+  </div>
+
+
+  
+</body>
+</html>

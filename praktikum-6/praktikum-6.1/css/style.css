@@ -1,0 +1,31 @@
+* {
+  margin: 10px 30px 0 5px;
+  padding: 0;
+  background-color: black;
+}
+
+.container_box_atas {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.box_1, .box_2, .box_3 {
+  width: 300px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.container_box_bawah {
+  display: flex;
+  justify-content: center;
+  
+}
+.box_4, .box_5, .box_6, .box_7, .box_8 {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+}

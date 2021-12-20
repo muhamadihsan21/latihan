@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  min-height: 500px;
+  min-width: 30px;
+}
+
+.main{
+  display: flex;
+}
+
+.nav {
+  flex: 1;
+  background: pink;
+}
+
+article {
+  background-color: azure;
+  flex: 2;
+
+}
+aside {
+  flex: 1;
+  height: 380px;
+  background-color: aqua;
+}
+header,footer {
+  width: 1000px;
+  height: 100px;
+  background: khaki;
+}
+
+nav, header, article, aside, footer {
+  padding: 30px;
+  font-size: 25px;
+}

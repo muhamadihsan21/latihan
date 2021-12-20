@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tugas 3.2</title>
+	<style>
+		.pb {
+			padding-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body  style="margin-left: 40px; margin-right: 40px; font-family: Georgia, 'Times New Roman', Times, serif; background-color: burlywood;">
+	<nav>
+		<ul style="display: flex; justify-content: space-evenly; border: 2px solid black; list-style-type: none;">
+			<li> Home </li> |
+			<li> Generate Link </li> |
+			<li> Transaction History </li> |
+			<li> Policy </li> |
+			<li> Logout </li>
+		</ul>
+	</nav>
+
+	<table >
+		<tbody>
+			<tr>
+				<td class="kiri">
+					<table>
+						<tbody>
+							<tr>
+								<td >
+									<img style="width: 250px;margin: 0; transform: translateY(-50px);" src="img/chart.jpg" alt="">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button style="background-color: aqua;width: 150px; height: 50px;">Upload Picture</button>
+								</td>
+							</tr> 
+						</tbody>
+					</table>
+				</td>
+				<td class="kanan" style="padding-left: 100px;">
+					<table>
+						<tr>
+							<td >Title Here</td>
+							<td >:</td>
+							<td ><input type="text" name="titlehere"></td>
+						</tr>
+						<tr>
+							<td ><label>Description</td>
+							<td >:</td>
+							<td ><textarea name="decription"></textarea></td>
+						</tr>
+						<tr>
+							<td class="pb"><label>Account Number</label></td>
+							<td class="pb">:</td>
+							<td class="pb"><input type="number" name="accountnumber"></td>
+						</tr>
+						<tr>
+							<td class="pb">Bank</td>
+							<td class="pb">:</td>
+							<td class="pb">
+								<select name="bank">
+									<option value="">pilih</option>
+									<option value="bank syariah">Bank Mandiri</option>
+									<option value="bank bni">Bank BTN</option>
+									<option value="bank bca">Bank BCA</option>
+									<option value="bank mandiri">Bank Syariah Indonesia</option>
+									<option value="bank bri">Bank BRI</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="pb">Account Holder</td>
+							<td class="pb">:</td>
+							<td class="pb"><input type="text" name="Accountholder"></td>
+						</tr>
+						<tr>
+							<td class="pb">Transaction</td>
+							<td class="pb">:</td>
+							<td class="pb">
+								<select name="transaction" size="1">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="pb"></td>
+							<td class="pb"></td>
+							<td class="pb">*if the transaction is for 3 person, choose 3 from the drop-dwon list</td>
+						</tr>
+						<tr>
+							<td class="pb"></td>
+							<td class="pb"></td>
+							<td class="pb">
+								<input id="sendtomobilephone" type="checkbox">
+								<label style="color: greenyellow;" for="sendtomobilephone">send to mobile phone</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="pb"></td>
+							<td class="pb"></td>
+							<td class="pb">
+								<input id="sendtoemail" type="checkbox">
+								<label style="color: greenyellow;" for="sendtoemail">send to email</label>
+							</td>
+						</tr>
+						<tr>
+							<td class="pb">Send to mobile phone</td>
+							<td class="pb">:</td>
+							<td class="pb"><input type="number" name="send-to-mobile-phone"></td>
+						</tr>
+						<tr >
+							<td>Send to mobile email</td>
+							<td>:</td>
+							<td><input type="text" name="send-to-email"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
