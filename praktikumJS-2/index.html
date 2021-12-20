@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal no.3 </title>
+  <style>
+  .btn {
+    background-color: rgb(29, 98, 226);
+    height:20px;
+    width:100px;
+    /* display:table-cell; */
+    align-content: center;
+    border: none;
+    /* cursor: pointer; */
+    float: right;
+    margin-top: 5px;
+    }
+  .pesan1 {
+    display:table-cell;
+    height:30px;
+    border:1 px solid black;
+    width: 90%;
+  }
+  .container {
+    border:1px solid;
+    padding:3px;
+    float:left;
+    background-color: rgb(194, 213, 216);
+  }
+  .pesanS1 {
+    border: 1px solid;
+    height:100px;
+    width:400px;
+    margin-bottom:10px;
+    overflow:scroll;
+    scroll-behavior: auto;
+  }
+  </style>
+
+
+</head>
+<body>
+  <h1 style="text-align:center;">Chat Box</h1>
+  <div class="container">
+    <div class="pesanS1" id="pesanS1"></div>
+      <input type="text" id="pesan1" class="pesan1">
+      <button class="btn" onclick="kirimPesan()">kirim</button>
+  </div>
+
+  <script type="text/javascript">
+    let terima = document.getElementById("pesan1");
+    let jawab = document.getElementById("pesanS1");
+    let chattt = terima.value;
+
+    function kirimPesan() {
+      jawab.innerHTML += `${terima.value} <br /> `;
+      scrollToBottom("pesanS1");
+      document.getElementById("pesan1").value = ""
+  
+    }
+    function scrollToBottom(id) {
+      let div = document.getElementById(id);
+      div.scrollTop = div.scrollHeight - div.clientHeight;
+    }
+  </script>
+</body>
+</html>
