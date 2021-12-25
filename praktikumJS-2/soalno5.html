@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="width: 500px;" id="container">
+        <legend>Form Validasi</legend>
+        <br>
+        <label for="nama"> Nama Pelanggan :</label>
+        <input type="text"  maxlength="30" required id="nama">
+        <br>
+        <br>
+        <label for="email">Email :</label>
+        <input type="email" required id="email">
+        <br>
+        <br>
+        <label for="jam_keberangkatan">Jam Keberangkatan :</label>
+        <input type="time" required id="jam_keberangkatan">
+        <br>
+        <br>
+        <label for="tujuan">Tujuan Keberangkatan :</label>
+        <input type="text" required id="tujuan">
+        <br>
+        <br>
+        <label for="jmlh_tiket">Jumlah Tiket :</label>
+        <input type="number" required min="1" max="10" id="jmlh_tiket">
+        <br>
+        <br>
+        <button type="submit" onclick="validasi()" >submit</button>
+        
+    </fieldset>
+
+    <script type="text/javascript">
+        function validasi() {
+            const jmlhtiket = document.getElementById("jmlh_tiket");
+
+            if (jmlhtiket.value > 10) {
+                alert("jumlah tidak sesuai"); document.getElementById("container")
+            }
+        }
+        
+    </script>
+</body>
+</html>
