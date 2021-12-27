@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.btn {
+  height:20px;
+  width:100px;
+  float: right;
+  margin-top: 5px;
+  }
+.pesan1 {
+  display:table-cell;
+  height:30px;
+  border:1 px solid black;
+  width: 90%;
+}
+.container {
+  border:1px solid;
+  padding:3px;
+  float:left;
+  background-color: rgb(194, 213, 216);
+}
+.pesanS1 {
+  border: 1px solid;
+  height:100px;
+  width:400px;
+  margin-bottom:10px;
+  overflow:scroll;
+  scroll-behavior: auto;
+}

@@ -6,32 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soal no.3 </title>
   <style>
-  .btn {
-    height:20px;
-    width:100px;
-    float: right;
-    margin-top: 5px;
-    }
-  .pesan1 {
-    display:table-cell;
-    height:30px;
-    border:1 px solid black;
-    width: 90%;
+  * {
+  margin: 0;
+  padding: 0;
+}
+.btn {
+  height:20px;
+  width:100px;
+  float: right;
+  margin-top: 5px;
   }
-  .container {
-    border:1px solid;
-    padding:3px;
-    float:left;
-    background-color: rgb(194, 213, 216);
-  }
-  .pesanS1 {
-    border: 1px solid;
-    height:100px;
-    width:400px;
-    margin-bottom:10px;
-    overflow:scroll;
-    scroll-behavior: auto;
-  }
+.pesan1 {
+  display:table-cell;
+  height:30px;
+  border:1 px solid black;
+  width: 90%;
+}
+.container {
+  border:1px solid;
+  padding:3px;
+  float:left;
+  background-color: rgb(194, 213, 216);
+}
+.pesanS1 {
+  border: 1px solid;
+  height:100px;
+  width:400px;
+  margin-bottom:10px;
+  overflow:scroll;
+  scroll-behavior: auto;
+}
   </style>
 
 
@@ -40,8 +44,10 @@
   <h1 style="text-align:center;">Chat Box</h1>
   <div class="container">
     <div class="pesanS1" id="pesanS1"></div>
-      <input type="text" id="pesan1" class="pesan1">
-      <button class="btn" onclick="kirimPesan()">kirim</button>
+    <form onsubmit="kirimPesan()" id="chatForm1">
+      <input type="text" name="pesan1" id="pesan1" class="pesan1">
+      <button type="button" class="btn">Kirim</button>
+    </form>
   </div>
 
   <script type="text/javascript">

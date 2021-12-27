@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="otentikasi.js""></script>
+  <title>Document</title>
+  
+</head>
+<body>
+  <!-- Nomor 1 -->
+  <label for="">Nama Lengkap :</label> 
+  <input type="text" value="" id="nama">
+  <br>
+  <label for=""> Password :</label>
+      <input type="password"  value="" id="password">
+  <br> 
+  <button type="submit" onclick="login()">Login</button>
+  
+
+  <!-- Nomor 2 -->
+  <hr>
+  <fieldset>
+    <legend>Kurs Rupiah + Mata Uang Asing</legend>
+    <table>
+      <tr>
+        <td>Masukan Nilai</td>
+        <td>Valas</td>
+        <td>Nilai Rupiah</td>
+      </tr>
+      <tr>
+        <td ><input type="number" id="bil" value="" onchange="hitung()"></td>
+        <td><select id="valas" onchange="hitung()">
+            <option value="Dollar US">Dollar US</option>
+            <option value="Dollar Singapore">Dollar Singapore</option>
+            <option value="Ringgit Malaysia">Ringgit Malaysia</option>
+            <option value="Yen Jepan">Yen Jepang</option>
+            <option value="Euro">Euro</option>
+            <option value="Riyal Arab Saudi">Riyal Arab Saudi</option>    
+        </select></td>
+        <td><input type="number" value="" id="bilrp"></td>
+      </tr>
+    </table>
+  </fieldset>
+
+  <!-- Nomor 3 -->
+  <h1 style="text-align:center;">Chat Box</h1>
+  <div class="container">
+    <div class="pesanS1" id="pesanS1"></div>
+    <form onsubmit="kirimPesan()" id="chatForm1">
+      <input type="text" name="pesan1" id="pesan1" class="pesan1">
+      <button type="button" class="btn" onclick="kirimPesan()">Kirim</button>
+    </form>
+  </div>
+
+
+</body>
+</html>
