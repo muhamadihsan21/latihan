@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 1</title>
+</head>
+<body>
+    <label for="">Nama Lengkap :</label> 
+    <input type="text" value="" id="nama">
+    <br>
+    <label for=""> Password :</label>
+        <input type="password"  value="" id="password">
+    <br> 
+    <button type="submit" onclick="login()">Login</button>
+
+
+    <script>
+        const failLogin = () => console.log("username dan password salah")
+
+    const successLogin = () => {
+    console.log("username benar");
+    location.href = "loginsukses.html";
+};
+
+const login = () => {
+    const username = document.getElementById("nama").value;
+    const pass = document.getElementById("password").value;
+    console.log(username);
+    console.log(pass);
+    if(username === 'ahmad2017' && pass === 'integrity'){
+        successLogin();
+    } else {
+        failLogin()
+        alert('silahkan coba lagi')
+    }
+}
+    </script>
+</body>
+</html>

@@ -2,29 +2,31 @@
   margin: 0;
   padding: 0;
 }
-.btn {
-  height:20px;
-  width:100px;
-  float: right;
-  margin-top: 5px;
-  }
-.pesan1 {
-  display:table-cell;
-  height:30px;
-  border:1 px solid black;
-  width: 90%;
+body {
+  background-color: #ecf0f1;
+  color: #2c3e50;
 }
-.container {
-  border:1px solid;
-  padding:3px;
-  float:left;
-  background-color: rgb(194, 213, 216);
+
+.result-chat {
+  width: 495.5px;
+  height: 300px;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  overflow: auto;
+  z-index: 1;
 }
-.pesanS1 {
-  border: 1px solid;
-  height:100px;
-  width:400px;
-  margin-bottom:10px;
-  overflow:scroll;
-  scroll-behavior: auto;
+
+.input-chat {
+  width: 435px;
+  z-index: 2;
+  position: absolute;
+  margin-top: -39px;
+  margin-left: 3px;
+}
+
+.btn-chat {
+  z-index: 3;
+  position: absolute;
+  margin-left: 449px;
+  margin-top: -39px;
 }

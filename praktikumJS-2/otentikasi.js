@@ -66,25 +66,14 @@ function hitung(){
 
 // 3
 
-let form = document.getElementById("chatForm1");
-let terima = document.getElementById("pesan1");
-let jawab = document.getElementById("pesanS1");
-let chattt = terima.value;
+let resultChat = document.querySelector(".result-chat");
+const inputChat = document.querySelector(".input-chat");
+const btnChat = document.querySelector(".btn-chat");
 
-function handleForm(event) {
-    event.preventDefault();
-}
-
-form.addEventListener("submit", handleForm);
-function kirimPesan() {
-    jawab.innerHTML += terima.value + "<br>";
-    scrollToBottom("pesanS1");
-    form.reset();
-}
-function scrollToBottom(id) {
-    let div = document.getElementById(id);
-    div.scrollTop = div.scrollHeight - div.clientHeight;
-}
+btnChat.addEventListener("click", function() {
+    resultChat.innerHTML = resultChat.innerHTML + "<br>" + inputChat.value;
+    inputChat.value = "";
+})
 
 
 // 4
