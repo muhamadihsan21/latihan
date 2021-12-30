@@ -16,32 +16,33 @@
     <option value="harimau">harimau</option>
 </select>
 <br>
-<img id="image" style="width: 30%;">
+<img id="image" style="width: 50%; margin: 30px;">
 
 <script>
     const cetakgambar = () => {
     const list = document.getElementById("list");
     const image = document.getElementById('image');
-}
+
     if(list.value === 'gorilla') {
         image.setAttribute("src" , "./img/gorilla.png");
-        // alert('ini foto gorilla');
+        alert('ini foto gorilla');
     } else if (list.value === 'ayam') {
         image.setAttribute("src" , "./img/ayam.jpg");
-        alert('ini foto kedua aku');
+        alert('ini foto ayam');
     } else if (list.value === 'bebek') {
         image.setAttribute('src', './img/bebek.jpg');
-        alert('ini foto ketiga aku');
+        alert('ini foto bebek');
     } else if (list.value === 'kucing') {
         image.setAttribute('src', './img/kucing.jpg');
-        alert('ini foto keempat aku');
+        alert('ini foto kucing');
     } else if (list.value === 'singa') {
         image.setAttribute('src', './img/singa.jpg');
-        alert('ini foto kelima aku');
+        alert('ini foto singa');
     }else if (list.value === 'harimau') {
         image.setAttribute('src', './img/harimau.jpg');
-        alert('ini foto kelima aku');
+        alert('ini foto harimau');
     }
+}
 
 </script>
 
