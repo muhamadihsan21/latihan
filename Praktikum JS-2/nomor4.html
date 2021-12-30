@@ -8,6 +8,7 @@
 </head>
 <body>
   <select id="list" onchange="cetakgambar()">
+    <option value="pilihgambar">Silahkan Pilih Gambar</option>
     <option value="gorilla">gorilla</option>
     <option value="ayam">ayam</option>
     <option value="bebek">bebek</option>
@@ -16,14 +17,16 @@
     <option value="harimau">harimau</option>
 </select>
 <br>
-<img id="image" style="width: 50%; margin: 30px;">
+<img id="image" style="width: 30%; margin: 30px;">
 
 <script>
     const cetakgambar = () => {
     const list = document.getElementById("list");
     const image = document.getElementById('image');
 
-    if(list.value === 'gorilla') {
+    if(list.value === 'pilihgambar') {
+        alert('Harap Pilih gambar yang lain');
+    }  else if(list.value === 'gorilla') {
         image.setAttribute("src" , "./img/gorilla.png");
         alert('ini foto gorilla');
     } else if (list.value === 'ayam') {
