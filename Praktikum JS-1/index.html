@@ -40,11 +40,11 @@ function hitungparkir() {
   let biaya = 0 ;
   const TARIF_AWAL = 3000 ; 
   const TARIF_PERJAM = 1000 ; 
-  if(selisih <= 2) {
+  if(selisih < 1) {
     biaya = TARIF_AWAL;
   }
   else {
-    let tambahan_jam = selisih - 2;
+    let tambahan_jam = selisih - 1;
     biaya = TARIF_AWAL + (TARIF_PERJAM * tambahan_jam);
   }
   let area_biaya = document.getElementById ("biaya");
@@ -59,7 +59,6 @@ function penjumlahan() {
 
   document.getElementById("hasil_").value = jumlah ;
 
-  echo "selamatdatang";
 }
 
   </script>

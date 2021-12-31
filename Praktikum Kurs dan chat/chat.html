@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        background-color: #9ed5e2;
+        color: #000000;
+        
+    }
+
+    .result-chat {
+        width: 495.5px;
+        height: 300px;
+        border: 1px solid black;
+        margin-bottom: 1rem;
+        overflow: auto;
+        z-index: 1;
+    }
+
+    .input-chat {
+        width: 435px;
+        z-index: 2;
+        position: absolute;
+        margin-top: -39px;
+        margin-left: 3px;
+    }
+
+    .btn-chat {
+        z-index: 3;
+        position: absolute;
+        margin-left: 449px;
+        margin-top: -39px;
+    }
+</style>
+</head>
+
+<body>
+    <main>
+        <div class="result-chat">
+        </div>
+        <div>
+            <input type="text" class="input-chat">
+            <button class="btn-chat" >Kirim</button>
+        </div>
+    </main>
+
+    <script>
+        let resultChat = document.querySelector(".result-chat");
+        const inputChat = document.querySelector(".input-chat");
+        const btnChat = document.querySelector(".btn-chat");
+
+        btnChat.addEventListener("click", function() {
+            resultChat.innerHTML = resultChat.innerHTML + "<br>" + inputChat.value;
+            inputChat.value = "";
+        })
+    </script>
+</body>
+</html>
