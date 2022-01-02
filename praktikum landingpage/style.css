@@ -2,11 +2,15 @@
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
+  background-image: url(./img/wp7890704.png);
 }
 
 #navbar {
   background-color: rgb(211, 211, 211);
   border-bottom: 1px solid black;
+}
+#logo {
+  width: 5%;
 }
 #slide {
   background-color: rgb(211, 211, 211);
